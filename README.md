@@ -1,7 +1,9 @@
 # stackoverflow-API
+#### Creating API Endpoints that do the following while also persisiting the data through a MongoDB data base and performing queires through Mongoose ODM Library
+
 #### Stackoverflow is a platform that different developers use to unblock each other and also learn together through sharing information..
 
-#### Creating API Endpoints that do the following while also persisiting the data through a MongoDB data base and performing queires through Mongoose ODM Library
+
 
 ```sh
  A user should create an account and login
