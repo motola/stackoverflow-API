@@ -1,12 +1,6 @@
 const mongoose = require('mongoose');
 const nodemon = require('nodemon');
 
-// const tagSchema = new mongoose.Schema({
-//     name: String,
-//     });
-const commentSchema = new mongoose.Schema({
-    name: String
-});
 
 const postSchema = new mongoose.Schema({
    id: Number,
