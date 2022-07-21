@@ -22,20 +22,20 @@ const getPostsById = async (req, res) => {
 
 }
 
-const deletePostsById = async (req, res) => {
-    const { id } = req.params
-     try {  
-        const posts = await Post.deletOne({
-            _id: id
-         })
-         res.json(posts)
-     } catch (error) {
-        res.status(404);
-        res.send({error: 'Post not found'})
-     }
+// const deletePostsById = async (req, res) => {
+//     const { id } = req.params
+//      try {  
+//         const posts = await Post.deletOne({
+//             _id: id
+//          })
+//          res.json(posts)
+//      } catch (error) {
+//         res.status(404);
+//         res.send({error: 'Post not found'})
+//      }
      
 
-}
+// }
 
 
 const createPosts = async (req, res) => {
