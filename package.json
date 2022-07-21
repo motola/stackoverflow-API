@@ -1,0 +1,31 @@
+{
+  "name": "stackoverflow-api",
+  "version": "1.0.0",
+  "description": "```sh\r  A user should create an account and login\r ```\r ```sh\r A user should be able to create a post.\r ```\r ```sh\r A user should be able to change his or her post.\r ```\r ```sh\r A user should be able to delete a post.\r ```\r ```sh\r A user should be able to view the created post\r ```\r ```sh\r A user should be able to view all the created posts.\r ```\r ```sh\r A user should be able to search for a post\r ```",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motola/stackoverflow-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motola/stackoverflow-API/issues"
+  },
+  "homepage": "https://github.com/motola/stackoverflow-API#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
