@@ -8,7 +8,7 @@ const getPosts = async (req, res) => {
 };
 
 
-const setPosts = async (req, res) => {
+const createPosts = async (req, res) => {
    const  {title, body, tags} = req.body
    const post = new Post({
     title: title,
@@ -33,5 +33,5 @@ const setPosts = async (req, res) => {
 
 module.exports = {
     getPosts,
-    setPosts
+    createPosts
 }
