@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const nodemon = require('nodemon');
+const User = require('./userModel')
 
 
 const postSchema = new mongoose.Schema({
@@ -11,6 +11,10 @@ const postSchema = new mongoose.Schema({
    body:{
     type: String,
     required: true
+   },
+   postedBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref:'User',
    },
    tags: [
     {
