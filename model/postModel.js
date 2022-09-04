@@ -3,7 +3,6 @@ const User = require('./userModel')
 
 
 const postSchema = new mongoose.Schema({
-   id: Number,
    title: {
     type: String,
     required: true
@@ -12,7 +11,7 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true
    },
-   postedBy: {
+   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref:'User',
    },
