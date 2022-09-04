@@ -9,6 +9,7 @@ const connectDB = require('./config/db');
 
 const postRouter = require('./router/postsRoutes');
 const userRouter = require('./router/userRoutes');
+const notFound  = require('./middleware/notFound')
 
 
 connectDB();
@@ -51,6 +52,6 @@ app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs))
 app.use('/posts', postRouter);
 app.use('/auth', userRouter);
 app.use('/user', userRouter);
-
+app.use(notFound);
  app.listen(port, () => console.log(`Server
   is running on port ${port}`))
