@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const nodemon = require('nodemon');
+const User = require('./userModel')
 
 
 const postSchema = new mongoose.Schema({
-   id: Number,
    title: {
     type: String,
     required: true
@@ -11,6 +10,10 @@ const postSchema = new mongoose.Schema({
    body:{
     type: String,
     required: true
+   },
+   user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref:'User',
    },
    tags: [
     {
