@@ -1,4 +1,13 @@
 # stackoverflow-API
+```sh
+ Heroku Documentation: https://stackoverflow-api2022.herokuapp.com/
+```
+```sh
+ Swagger Documentation: http://localhost:3000/api-docs
+```
+
+
+
 #### Creating API Endpoints that do the following while also persisiting the data through a MongoDB data base and performing queires through Mongoose ODM Library
 
 #### Stackoverflow is a platform that different developers use to unblock each other and also learn together through sharing information..
